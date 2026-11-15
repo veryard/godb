@@ -1,0 +1,84 @@
+name: Bug report
+description: Something in godb does not work as it should
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please do not paste passwords, connection strings or data from your databases.
+        Crop screenshots to hide anything private.
+  - type: input
+    id: version
+    attributes:
+      label: godb version
+      description: Run `godb --version`, or take it from the file name you installed.
+      placeholder: "1.2.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How it was installed
+      options:
+        - Fedora rpm
+        - Arch package
+        - Linux tarball
+        - Windows zip
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      description: For example Fedora 44 with GNOME on Wayland, or Windows 11.
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Database engine
+      options:
+        - MySQL
+        - MariaDB
+        - PostgreSQL
+        - SQLite
+        - Not related to one engine
+    validations:
+      required: true
+  - type: input
+    id: engine-version
+    attributes:
+      label: Database server version
+      description: Not needed for SQLite or when the bug is not about a database.
+      placeholder: "PostgreSQL 16.4"
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you did and what you saw. Include any message godb showed, word for word.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest set of steps that shows it. A short table or query that triggers it helps a lot.
+      placeholder: |
+        1. Open a table
+        2. Edit a cell
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots (with private data hidden), or whether it worked in an earlier version.

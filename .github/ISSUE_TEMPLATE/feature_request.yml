@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest something godb should do
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem you are trying to solve before the solution you have in mind. Please do not paste
+        passwords, connection strings or data from your databases.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The task, and what is hard or impossible about it today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like
+      description: How you imagine it working. Another tool that does it well is a useful example.
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Database engine
+      options:
+        - All of them
+        - MySQL or MariaDB
+        - PostgreSQL
+        - SQLite
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you do now instead

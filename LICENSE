@@ -1,0 +1,31 @@
+godb licence
+
+Copyright (c) 2026 veryard. All rights reserved.
+
+1. Use. You may download, install and run godb, for any purpose including
+   commercial use, on any number of computers, without charge.
+
+2. Redistribution. You may pass on unmodified copies of the files exactly as
+   they are published on the releases page they came from, as long as this
+   licence goes with them and you do not charge for them.
+
+3. Restrictions. You may not modify godb, or decompile, disassemble or
+   otherwise reverse engineer it, except to the extent the law of your country
+   allows that despite this restriction. You may not sell it, rent it, or
+   present a changed version as godb.
+
+4. Ownership. godb is licensed, not sold. Apart from the rights given above,
+   all rights stay with the copyright holder.
+
+5. Third-party software. godb contains software from others, under their own
+   licences, which are listed in THIRD_PARTY_NOTICES.txt. Those licences apply
+   to that software; nothing here changes them.
+
+6. No warranty. godb is provided "as is", without warranty of any kind,
+   express or implied, including merchantability, fitness for a particular
+   purpose and non-infringement. It connects to your databases and can change
+   or delete data when you tell it to; keep backups.
+
+7. Limitation of liability. To the extent the law allows, the copyright holder
+   is not liable for any claim, damages or other liability arising from the
+   use of godb, whether in contract, tort or otherwise.
